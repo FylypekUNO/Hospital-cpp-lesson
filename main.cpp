@@ -121,7 +121,7 @@ void addMedicine() {
     string name;
 
     do {
-        name = inputString("Podaj nazwe leku >", 1);
+        name = inputLine("Podaj nazwe leku >", 1);
     } while (global.pharmacy.medicines.contains(name));
 
     double cost = inputDouble("Podaj cene leku > ", 0.01, 1000.00);
@@ -137,7 +137,7 @@ void addSurgery() {
     string name;
 
     do {
-        name = inputString("Podaj nazwe operacji >", 1);
+        name = inputLine("Podaj nazwe operacji >", 1);
     } while (global.surgery.surgeries.contains(name));
 
     double cost = inputDouble("Podaj cene operacji > ", 0.01, 1000000.00);
